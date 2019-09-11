@@ -31,9 +31,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.facebook.react:react-native:+' {
-        exclude group: 'com.android.support'
-    }
+    implementation 'com.facebook.react:react-native:+'
     def supportLibVersion = safeExtGet('supportLibVersion', '28.0.0')
     def androidXVersion = safeExtGet('androidXVersion', null)
     if (supportLibVersion && androidXVersion == null) {
